@@ -1,2 +1,4 @@
-# single-cell-protienomics
+# single-cell-proteomics
 Group Project for BIO 465
+
+Proteomic mass spectrometry data often uses machine learning to process data more accurately. One example of this is to learn the characteristic feature of peptide spectra (see PMID: 18563926). The recent rise of single cell proteomics has enabled us to identify and quantify proteins found in a single cell - greatly advancing our understanding of cellular processes and environmental reponse. Unfortunately, single cell proteomics data have very different characteristics than traditional proteomics data. Therefore, all of the machine learning models built on traditional data are failing with single cell data. This project will create a Bayes Net for the probabilities of features in MS/MS data (fragment ions) and compare it to a Bayes Net made from traditional data.
