@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<parameters>
+<parameter name="desc">GNPS - Hela Single Cell QC kelly lab</parameter>
+<parameter name="email">hboekweg@byu.edu</parameter>
+<parameter name="raw_files">f.hboekweg/Hela Single Cell QC mzML/D19_15um30cm_SC1.mzML;f.hboekweg/Hela Single Cell QC mzML/D19_15um30cm_SC2.mzML;f.hboekweg/Hela Single Cell QC mzML/D19_15um30cm_SC3.mzML;f.hboekweg/Hela Single Cell QC mzML/D19_15um30cm_SC4.mzML;f.hboekweg/Hela Single Cell QC mzML/D19_15um30cm_SC5.mzML;f.hboekweg/SC Hela QC raw/D19_15um30cm_SC1.raw;f.hboekweg/SC Hela QC raw/D19_15um30cm_SC5.raw;f.hboekweg/SC Hela QC raw/D19_15um30cm_SC3.raw;f.hboekweg/SC Hela QC raw/D19_15um30cm_SC2.raw;f.hboekweg/SC Hela QC raw/D19_15um30cm_SC4.raw;</parameter>
+<parameter name="task">5ab97297bbad444f9b25d612bda1a402</parameter>
+<parameter name="update_label">2021-11-01_hboekweg_5ab97297</parameter>
+<parameter name="updated_dataset">MSV000087524</parameter>
+<parameter name="upload_file_mapping">RAW-00000.mzML|hboekweg/Hela Single Cell QC mzML/D19_15um30cm_SC1.mzML</parameter>
+<parameter name="upload_file_mapping">RAW-00001.mzML|hboekweg/Hela Single Cell QC mzML/D19_15um30cm_SC2.mzML</parameter>
+<parameter name="upload_file_mapping">RAW-00002.mzML|hboekweg/Hela Single Cell QC mzML/D19_15um30cm_SC3.mzML</parameter>
+<parameter name="upload_file_mapping">RAW-00003.mzML|hboekweg/Hela Single Cell QC mzML/D19_15um30cm_SC4.mzML</parameter>
+<parameter name="upload_file_mapping">RAW-00004.mzML|hboekweg/Hela Single Cell QC mzML/D19_15um30cm_SC5.mzML</parameter>
+<parameter name="upload_file_mapping">RAW-00005.raw|hboekweg/SC Hela QC raw/D19_15um30cm_SC1.raw</parameter>
+<parameter name="upload_file_mapping">RAW-00006.raw|hboekweg/SC Hela QC raw/D19_15um30cm_SC5.raw</parameter>
+<parameter name="upload_file_mapping">RAW-00007.raw|hboekweg/SC Hela QC raw/D19_15um30cm_SC3.raw</parameter>
+<parameter name="upload_file_mapping">RAW-00008.raw|hboekweg/SC Hela QC raw/D19_15um30cm_SC2.raw</parameter>
+<parameter name="upload_file_mapping">RAW-00009.raw|hboekweg/SC Hela QC raw/D19_15um30cm_SC4.raw</parameter>
+<parameter name="user">hboekweg</parameter>
+<parameter name="uuid">1E381490-F05E-0001-5E91-1C0048501652</parameter>
+<parameter name="workflow">UPDATE-MASSIVE-DATASET</parameter>
+<parameter name="workflow_version">1.3.2</parameter>
+</parameters>
