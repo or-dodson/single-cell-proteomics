@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<parameters>
+<parameter name="dataset.comments">6 2ng files and 6 0.2ng files
+
+Samples are QC Hela standard (https://www.thermofisher.com/order/catalog/product/88328#/88328)
+
+LC system: Pump + Autosampler:Thermo Scientific Dionex UltiMate 3000 Series
+
+Column i.d. 30 um with different packing material:
+J3 = Jupiter C18, 3.0 um, 300 angstrom, 50 cm long
+K13 = Kinetex C18,1.3 um, 100 angstrom, 9cm long
+W17 = Water BEH C18, 1.7 um, 130 angstrom, 16 cm long
+
+60 min separation gradient (8%B to 25%B)
+20 min flushing from 25%B to 45%B
+5 min washing from 45% to 90%B
+25 min regeneration at 2%
+flowrate is about 30-40 nL/m
+
+Mobile A = Water (Honeywell) + 0.1 % Formic Acid (Thermo)
+Mobile B = Acetonitrile (Honeywell) + 0.1% Formic Acid (Thermo)
+
+The file names contain the sample size and lc packing material. </parameter>
+<parameter name="dataset.instrument">MS:1003028</parameter>
+<parameter name="dataset.keywords">single cell</parameter>
+<parameter name="dataset.modification">MS:1002864</parameter>
+<parameter name="dataset.password">a</parameter>
+<parameter name="dataset.pi">Ryan Kelly|ryan@chem.byu.edu|Brigham Young University|United States</parameter>
+<parameter name="dataset.species">NCBITaxon:9606</parameter>
+<parameter name="default.license">on</parameter>
+<parameter name="desc">GNPS - Hela Single Cell QC kelly lab</parameter>
+<parameter name="email">hboekweg@byu.edu</parameter>
+<parameter name="raw_files">d.hboekweg/Hela Single Cell QC mzML;</parameter>
+<parameter name="task">94ffc78d5b5e480bbec8b8935c8c5d6a</parameter>
+<parameter name="upload_file_mapping">RAW-00000.mzML|hboekweg/Hela Single Cell QC mzML/Ex_Auto_J3_30umTB_02ngQC_60m_2.mzML</parameter>
+<parameter name="upload_file_mapping">RAW-00001.mzML|hboekweg/Hela Single Cell QC mzML/Ex_Auto_K13_30umTA_02ngQC_60m_2.mzML</parameter>
+<parameter name="upload_file_mapping">RAW-00002.mzML|hboekweg/Hela Single Cell QC mzML/Ex_Auto_W17_30umTA_02ngQC_60m_4.mzML</parameter>
+<parameter name="upload_file_mapping">RAW-00003.mzML|hboekweg/Hela Single Cell QC mzML/Ex_Auto_W17_30umTB_2ngQC_60m_1.mzML</parameter>
+<parameter name="upload_file_mapping">RAW-00004.mzML|hboekweg/Hela Single Cell QC mzML/Ex_Auto_K13_30umTA_2ngQC_60m_1.mzML</parameter>
+<parameter name="upload_file_mapping">RAW-00005.mzML|hboekweg/Hela Single Cell QC mzML/Ex_Auto_J3_30umTB_2ngQC_60m_1.mzML</parameter>
+<parameter name="upload_file_mapping">RAW-00006.mzML|hboekweg/Hela Single Cell QC mzML/Ex_Auto_J3_30umTB_02ngQC_60m_1.mzML</parameter>
+<parameter name="upload_file_mapping">RAW-00007.mzML|hboekweg/Hela Single Cell QC mzML/Ex_Auto_K13_30umTA_2ngQC_60m_2.mzML</parameter>
+<parameter name="upload_file_mapping">RAW-00008.mzML|hboekweg/Hela Single Cell QC mzML/Ex_Auto_J3_30umTB_2ngQC_60m_2.mzML</parameter>
+<parameter name="upload_file_mapping">RAW-00009.mzML|hboekweg/Hela Single Cell QC mzML/Ex_Auto_W17_30umTA_02ngQC_60m_3.mzML</parameter>
+<parameter name="upload_file_mapping">RAW-00010.mzML|hboekweg/Hela Single Cell QC mzML/Ex_Auto_K13_30umTA_02ngQC_60m_1.mzML</parameter>
+<parameter name="upload_file_mapping">RAW-00011.mzML|hboekweg/Hela Single Cell QC mzML/Ex_Auto_W17_30umTB_2ngQC_60m_2.mzML</parameter>
+<parameter name="user">hboekweg</parameter>
+<parameter name="uuid">1E37D748-8D76-0001-542F-F3AE1052CD20</parameter>
+<parameter name="workflow">MASSIVE-COMPLETE</parameter>
+<parameter name="workflow_version">1.3.2</parameter>
+</parameters>
