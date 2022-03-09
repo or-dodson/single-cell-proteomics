@@ -15,3 +15,5 @@ The raw data comes from MassIVE (Single cell data: MSV000087524, bulk data: MSV0
 The first figures are for understanding our approach to the problem, so the specific data isn't important. The process to recreate these figures can be found in make_figure1.ipynb and make_figure2.ipynb.
 
 There is another ipython notebook which takes the data from the data folder and uses it to train a ML model, which is used to make the remaining figures. All this can be found in that notebook.
+
+[Overview of structure and data flow for this project](images/project_structre_overview.png)
