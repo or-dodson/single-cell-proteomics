@@ -1,3 +1,4 @@
+from doctest import master
 import pandas as pd
 import numpy as np
 import re
@@ -62,6 +63,9 @@ def clean_data(file_path):
 
     # fill in missing mass and intensity values for unobserved ions
     master_df = plug_holes(master_df)
+
+    # bin the mass and intensity values
+    master_df = bin(master_df)
 
     return master_df
 
@@ -167,5 +171,10 @@ def convert_peptide_frag_to_mass(full_peptide, frag_length, y_ion=False):
             
     return mass
 
-def bin_data(df):
-    pass
+def bin(df):
+    df["Mass"] = df["Mass"].apply(lambda x: 1 if x <= MASS_SECTOR_1 else 2 if x <= MASS_SECTOR_2 else 3)
+    df.rename(columns={"Mass": "sector"}, inplace=True)
+    df["Intensity"] = df["Intensity"].apply(lambda x: "none" if x == 0 else "low" if x <= INTENSITY_BIN_1 else "medium" if x <= INTENSITY_BIN_2 else "high")
+
+    return df
+    
