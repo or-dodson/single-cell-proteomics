@@ -39,9 +39,10 @@ def clean_data(file_path):
     # remove unwanted columns
     df = df[["Matched Ion Mass-To-Charge Ratios", "Matched Ion Intensities", "peptide", "File Name", "scan", "Base Peak Intensity"]]
 
-    # clean peptide column to not include comments within peptides of form "[*]"
-    df['peptide'] = df['peptide'].apply(lambda x: re.sub(r"\[[^\[\]]*\]", '', x))
-    df['peptide'] = df['peptide'].apply(lambda x: re.sub(r"\|[\s\S]*", "", x))
+    # remove rows where peptide value isn't clean. Some columns have comments or alternate values
+    r = re.compile(r"[^A-Z]+")
+    df[df.apply(lambda x: False if r.search(x.peptide) else True, axis=1)]
+
 
     # create the template df with a row for all ions, even the ones missing from the annotations
     template_df = create_template_df(df)
