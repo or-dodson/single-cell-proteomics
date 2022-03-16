@@ -3,6 +3,10 @@ import numpy as np
 import re
 
 MAX_QVALUE = 0.001
+MASS_SECTOR_1 = 600
+MASS_SECTOR_2 = 1200
+INTENSITY_BIN_1 = 1 / 3
+INTENSITY_BIN_2 = 2 / 3
 AMINO_ACIDS = {
     "G" : 57.02,
     "A" : 71.04,
@@ -41,7 +45,7 @@ def clean_data(file_path):
 
     # remove rows where peptide value isn't clean. Some columns have comments or alternate values
     r = re.compile(r"[^A-Z]+")
-    df[df.apply(lambda x: False if r.search(x.peptide) else True, axis=1)]
+    df = df[df.apply(lambda x: False if r.search(x.peptide) else True, axis=1)]
 
 
     # create the template df with a row for all ions, even the ones missing from the annotations
@@ -162,3 +166,6 @@ def convert_peptide_frag_to_mass(full_peptide, frag_length, y_ion=False):
             mass += AMINO_ACIDS[full_peptide[-i]]
             
     return mass
+
+def bin_data(df):
+    pass
