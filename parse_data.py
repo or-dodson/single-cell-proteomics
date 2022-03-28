@@ -48,7 +48,6 @@ def clean_data(file_path):
     r = re.compile(r"[^A-Z]+")
     df = df[df.apply(lambda x: False if r.search(x.peptide) else True, axis=1)]
 
-
     # create the template df with a row for all ions, even the ones missing from the annotations
     template_df = create_template_df(df)
 
