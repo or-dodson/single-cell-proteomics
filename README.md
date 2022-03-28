@@ -16,4 +16,9 @@ The first figures are for understanding our approach to the problem, so the spec
 
 There is another ipython notebook which takes the data from the data folder and uses it to train a ML model, which is used to make the remaining figures. All this can be found in that notebook.
 
-![Overview of structure and data flow for this project](./images/project_structure_overview.png)
+![Overview of structure and data flow for this project](./figures/project_structure_overview.png)
+
+## Files
+- combine_psm_mzml.py: 
+- combine_parsed_psm.ipynb
+- data_parser.py: Used by parse_data.ipynb to take parsed psm files (data/parsed_psm) and combines them by data type (e.g. all_sc.tsv)
