@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import re
 
-MAX_QVALUE = 0.001
+MAX_QVALUE = 0.01
 MASS_SECTOR_1 = 600
 MASS_SECTOR_2 = 1200
 INTENSITY_BIN_1 = 1 / 3
