@@ -16,7 +16,6 @@ The first figures are for understanding our approach to the problem, so the spec
 
 There is another ipython notebook which takes the data from the data folder and uses it to train a ML model, which is used to make the remaining figures. All this can be found in that notebook.
 
-![Overview of structure and data flow for this project](./figures/project_structure_overview.png)
 
 ## Files
 - combine_psm_mzml.py: 
