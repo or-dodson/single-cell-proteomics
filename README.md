@@ -3,7 +3,7 @@
 
 ## Reproducibility Instructions
 Additional detail can be found under the *Additonal Information* section.
-1. Install Docker on your machine.
+1. Install Docker Desktop on your machine.
 <!-- 2. Clone this git repository to your machine using the command `git clone https://github.com/or-dodson/single-cell-proteomics.git`. -->
 2. Run docker using the command `docker run -it -p 8888:8888 evandodson/sc_proteomics /root/single-cell-proteomics/runJupyter.sh`
 3. This will start a Jupyter Lab server. To connect to the server, copy and paste the link given in the terminal that looks like `http://127.0.0.1:8888/lab?token=...` into your browser.
@@ -27,9 +27,9 @@ Additionally, raw data files can be downloaded from [Box](https://byu.box.com/s/
 ## File Descriptions
 Descriptions of files contained in the repository.
 * `analyze_data.ipynb`: Performs analysis on the data to show statistical significance.
-* `combine_parsed_psm.ipynb`
+* `combine_parsed_psm.ipynb`: A notebook that takes the mzml-psm files and combines them into `all_datatype.tsv` files, 1 per datatype, using `combined_psm_parser.py` which does most of the processing
 * `combine_psm_mzml.py`
-* `combined_psm_parser.py`
+* `combined_psm_parser.py`: A script to fill in missing ions (none intensity) and bin the data
 * `data_parser.py`: Used by parse_data.ipynb to take parsed psm files (data/parsed_psm) and combines them by data type (e.g. all_sc.tsv)
 * `docker`: Contains the Dockerfile for this project
     * `Dockerfile`: Used by Docker
@@ -38,6 +38,6 @@ Descriptions of files contained in the repository.
     * `make_figure3.ipynb`: The notebook that generated Figure 3.
 * `ion_tables.ipynb`: Contains code to create ion tables.
 * `IonCountChiSquared.ipynb`: Performs $\chi^2$ analysis on the data to show statistical significance.
-* `parse_raw_data.ipynb`
+* `parse_raw_data.ipynb`: A notebook for taking the raw mzml and psm files and combining them into the more usable format using functions defined in `combine_psm_mzml.py`
 * `README.md`: This file
 * `runJupyter.sh`: Starts the Jupyter Lab server in the Docker container.
