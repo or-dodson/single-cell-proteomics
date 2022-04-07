@@ -1,9 +1,5 @@
 venv/
 .ipynb_checkpoints
-data/*.tsv
-data/*.tsv.gz
-data/*/*.tsv
-data/mzMLs/
-data/psm/
+data/
 __pycache__/
 *.DS_Store
